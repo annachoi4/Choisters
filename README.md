@@ -1,4 +1,5 @@
 # Choisters
+by Anna Choi, Andrés Rodriguez, Gabriella Roman, Christopher Trinh
 
-Tinder for Dogs: 
-Web Application where owners are able to look for playmates for their dogs. 
+## About
+A web application where dog owners can look for playmates for their dogs. Also known as **Tinder for Dogs.** 
