@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename="style.css") }}">
+    <meta charset="UTF-8">
+    <title>Pupdate</title>
+    <link rel="icon" href="https://annachoi4.github.io/pupDate/favicon/pupdate.png">
+</head>
+<body>
+<img src="homepage.jpg">
+    <h2>PupDate</h2>
+    {% if account %}
+        <div title="Your Profile">{{ account }}</div>
+    {% else %}
+        <div>
+            <a href='/login'>Login</a>
+        </div>
+    {% endif %}
+
+    {% if account %}
+        <div><a href='/logout'>Logout</a></div>
+    {% else %}
+        <div>
+            <p><a href='/register'>Register</a></p>
+        </div>
+    {% endif %}
+
+
+</body>
+</html>
