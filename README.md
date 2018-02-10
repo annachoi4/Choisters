@@ -1,5 +1,8 @@
-# Team Choisters - Pupdate
-by Anna Choi, Andrés Rodriguez, Gabriella Roman, Christopher Trinh
+#pupdate
+a web application for dog owners to find nearby dog mates
 
-## About
-A web application where dog owners can look for playmates for their dogs. Also known as **Tinder for Dogs.** 
+##url
+[url]
+
+##contributors
+anna choi + andrés rodriguez + gabriella roman + christopher trinh
