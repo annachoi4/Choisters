@@ -1,4 +1,4 @@
-# Choisters - Pupdate
+# Team Choisters - Pupdate
 by Anna Choi, Andrés Rodriguez, Gabriella Roman, Christopher Trinh
 
 ## About
