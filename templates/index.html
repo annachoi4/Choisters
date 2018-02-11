@@ -5,21 +5,34 @@
     <meta charset="UTF-8">
     <title>Pupdate</title>
     <link rel="icon" href="https://annachoi4.github.io/pupDate/favicon/pupdate.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
 </head>
 <body>
+
 <style>
     img {
       max-width:50%;
       max-height:50%;
+      border:3px inset #021a40;
+    }
+    h2 {
+      font-family: 'Raleway', sans-serif;
+    }
+    p, a {
+      font-family: 'Source Sans Pro', sans-serif;
     }
 </style>
 
+    <h2>pupDate</h2>
 <img src="http://www.kennelwood.com/wp-content/uploads/2015/06/playdate_1500x750.jpg">
-    <h2>PupDate</h2>
+
     {% if account %}
         <div title="Your Profile">{{ account }}</div>
     {% else %}
         <div>
+            <p></p>
             <a href='/login'>Login</a>
         </div>
     {% endif %}
