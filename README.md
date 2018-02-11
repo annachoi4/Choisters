@@ -1,5 +1,5 @@
 # pupDate
-a web application for dog owners to find their dogs some nearby playmates
+A web application for dog owners to find their dogs some nearby playmates
 
 ## url
 https://annachoi4.github.io/pupDate/
