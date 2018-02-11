@@ -15,45 +15,92 @@
     img {
       max-width:75%;
       max-height:75%;
-      border:3px inset #021a40;
       align: center;
     }
     h2 {
       font-family: 'Raleway', sans-serif;
       font-size: 2.5em;
       text-align: center;
+      color: white;
     }
     p, a {
       font-family: 'Source Sans Pro', sans-serif;
+      color: white;
     }
     body {
         margin: 50px 150px;
+        background-color: #5DBCD2;
+        background-image: url("https://cdn.dribbble.com/users/225068/screenshots/2224869/dog.gif");
+        background-position: right 0px top;
     }
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
         width: 50%;
+        border: 3px inset #000000;
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+    .f1 {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%
+    }
+    .f2 {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%
+    }
+
+    input[type='submit'] {
+        position: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        display: inline-block;
+        font-size: 1.25rem;
+        text-decoration: none;
+        text-transform: lowercase;
+        border-width: 1px;
+        border-style: solid;
+        padding: .5em 1.5em;
+        color: black;
+        background-color: white;
+        border-radius: 25px;
+    }
+    input[type='submit']:hover {
+        color: #232323;
+        cursor:pointer;
     }
 </style>
 
-    <h2>pupDate</h2>
+<img src="https://i.imgur.com/YOGoV5V.png" class="logo">
 <img src="http://www.kennelwood.com/wp-content/uploads/2015/06/playdate_1500x750.jpg" class="center">
+
+    {% if account %}
+        <div><a href='/logout'>Logout</a></div>
+    {% else %}
+        <div style="text-align:center;">
+            <form action="/register" class="f1">
+                <input type="submit" value="Get Started" />
+            </form>
+        </di>
+    {% endif %}
 
     {% if account %}
         <div title="Your Profile">{{ account }}</div>
     {% else %}
         <div>
-            <p></p>
-            <a href='/login'>Login</a>
-        </div>
-    {% endif %}
-
-    {% if account %}
-        <div><a href='/logout'>Logout</a></div>
-    {% else %}
-        <div>
-            <p><a href='/register'>Register</a></p>
+            <form action="/login" class="f2">
+                <input type="submit" value="Log In" />
+            </form>
         </div>
     {% endif %}
 
